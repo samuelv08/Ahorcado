@@ -1,7 +1,8 @@
+// ...existing code...
 import React from 'react';
 import './Lista_De_Palabras.css';
 
-export default function ListaDePalabras({ palabras }) {
+function ListaDePalabras({ palabras }) {
   const defaultWords = [
     "abismo","aguila","almohada","amarillo","amistad","anillo","antena","arbol","ardilla","arena","armario","atencion","autobus","avion","azotea",
     "balanza","balon","banco","bandera","banera","barbilla","barco","barrera","biblioteca","bicicleta","billetera","botella","brujula","buho",
@@ -22,4 +23,10 @@ export default function ListaDePalabras({ palabras }) {
     "unicornio","valle","vapor","verano","verdad","vela","venado","ventana","viento","vino","violin","volcan","voto","yate","yeso","yunque","zapato",
     "zanahoria","zorro","zona","zumbido"
   ];
+}
+
+export default function ElegirPalabra() {
+  const palabras = defaultWords;
+  const palabraElegida = palabras[Math.floor(Math.random() * palabras.length)];
+  return palabraElegida;
 }

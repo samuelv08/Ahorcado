@@ -1,66 +1,16 @@
-# My React App
+# React + Vite
 
-This is a simple React application that serves as a starting point for building web applications. 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Project Structure
+Currently, two official plugins are available:
 
-```
-my-react-app
-├── public
-│   └── index.html        # Main HTML file
-├── src
-│   ├── index.jsx         # Entry point of the React application
-│   ├── App.jsx           # Main App component
-│   ├── components
-│   │   └── Header.jsx    # Header component
-│   ├── pages
-│   │   └── Home.jsx      # Home page component
-│   ├── hooks
-│   │   └── useFetch.js    # Custom hook for data fetching
-│   ├── services
-│   │   └── api.js        # API request functions
-│   ├── styles
-│   │   └── index.css     # Global CSS styles
-│   └── utils
-│       └── helpers.js    # Utility functions
-├── package.json          # npm configuration file
-├── .gitignore            # Git ignore file
-└── README.md             # Project documentation
-```
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Getting Started
+## React Compiler
 
-To get started with this project, follow these steps:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-1. **Clone the repository:**
-   ```
-   git clone <repository-url>
-   ```
+## Expanding the ESLint configuration
 
-2. **Navigate to the project directory:**
-   ```
-   cd my-react-app
-   ```
-
-3. **Install dependencies:**
-   ```
-   npm install
-   ```
-
-4. **Run the application:**
-   ```
-   npm start
-   ```
-
-The application will be available at `http://localhost:3000`.
-
-## Features
-
-- A simple header component for navigation.
-- A home page component.
-- Custom hook for fetching data from APIs.
-- Utility functions for common tasks.
-
-## Contributing
-
-Feel free to submit issues or pull requests for any improvements or features you would like to see!
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
