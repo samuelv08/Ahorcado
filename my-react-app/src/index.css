@@ -13,18 +13,98 @@ body {
   height: 100vh;
 }
 
-.circule {
+.gallows-vertical {
+  width: 20px;
+  height: 630px;
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  border: 2px solid white;
+}
+
+.gallows-horizontal {
+  width: 300px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  left: 122px;
+  border: 2px solid white;
+}
+
+.gallows-rope {
+  width: 0%;
+  height: 95px;
+  position: absolute;
+  top: 52px;
+  left: 275px;
+  border: 2px solid white;
+}
+
+.head {
   width: 150px;
   height: 150px;
-  margin-top: 150px;
-  margin-left: 200px;
+  position: absolute;
+  top: 150px;
+  left: 200px;
   border: 2px solid white;
   border-radius: 50%;
 }
 
 .chest {
   width: 20px;
-  height: 100px;
-  margin-left: 225px;
+  height: 200px;
+  position: absolute;
+  top: 303px;
+  left: 265px;
   border: 2px solid white;
 }
+
+.left-leg {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 495px;
+  left: 165px;
+  border: 2px solid white;
+  transform: rotate(-45deg);
+  transform-origin: right center;
+}
+
+.right-leg {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 495px;
+  left: 285px;
+  border: 2px solid white;
+  transform: rotate(45deg);
+  transform-origin: left center;
+}
+
+.left-arm {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 350px;
+  left: 163px;
+  border: 2px solid white;
+}
+
+.right-arm {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 350px;
+  left: 287px;
+  border: 2px solid white;
+}
+
+.gallows-base {
+  width: 140px;
+  height: 20px;
+  position: absolute;
+  top: 662px;
+  left: 40px;
+  border: 2px solid white;
+}
+
