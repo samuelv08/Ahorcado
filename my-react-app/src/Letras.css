@@ -1,0 +1,35 @@
+.letras-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  position: absolute;
+  bottom: 70px;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 700px;
+}
+
+.letra-button {
+  width: 65px;
+  height: 65px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.letra-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.letra-button.usada {
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+}
