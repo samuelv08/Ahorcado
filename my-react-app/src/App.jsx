@@ -26,6 +26,19 @@ function App() {
       .join(' ')
   }
 
+  // Verificar si el jugador ganó
+  const verificarVictoria = () => {
+    if (!palabraActual) return false
+    
+    // Obtener letras únicas de la palabra (ignorando mayúsculas)
+    const letrasUnicas = new Set(palabraActual.toUpperCase().split(''))
+    
+    // Verificar si todas las letras únicas están en letrasAdivinadas
+    return [...letrasUnicas].every(letra => letrasAdivinadas.has(letra))
+  }
+
+  const juegoGanado = verificarVictoria()
+
   return (
     <>
       <div className="gallows-vertical"></div>
@@ -46,6 +59,12 @@ function App() {
       <div className="palabra-display">
         {crearDisplayPalabra()}
       </div>
+
+      {juegoGanado && (
+        <div className="mensaje-victoria">
+          ¡Felicitaciones! Has ganado 🎉
+        </div>
+      )}
 
       <Letras 
         letrasAdivinadas={letrasAdivinadas} 
